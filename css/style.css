@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/todo.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Indie Flower', cursive;
+}
+
+.main {
+    width: 300px;
+    height: 350px;
+    margin: 200px auto;
+    text-shadow: violet 3px 3px 3px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    border: violet ridge 3px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.header:hover {
+    border: royalblue ridge 3px;
+    color: aqua;
+}
+
+
+.list li {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+.list li:hover {
+    border: cadetblue ridge 3px;
+    color: chartreuse;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 0px 1px;
+}
+
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    opacity: 0.4;
+}

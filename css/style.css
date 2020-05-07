@@ -4,8 +4,80 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fff;
     color: #555555;
     font-size: 20px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(/img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: linear 0.5s;
+    -webkit-transition: linear 0.5s;
+    -moz-transition: linear 0.5s;
+    -ms-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
+}
+
+.button-orange {
+    background-color: #e67e22;
+    color: white;
+}
+
+.button-gost {
+    border: 1px #e67e22 solid;
+    color: #e67e22;
+}
+
+
+
+.button-orange:hover {
+    background-color: white;
+    color: orange;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px gold;
+}
+
+.button-gost:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px red;
 }

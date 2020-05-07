@@ -9,6 +9,7 @@ body {
     color: black;
     font-size: 20px;
     font-family: 'Capriola', sans-serif;
+
 }
 
 .row {
@@ -220,6 +221,34 @@ i:hover{
     -moz-transition: ease-in-out 2s;
     -ms-transition: ease-in-out 2s;
     -o-transition: ease-in-out 2s;
-
+}
     
     /* End Features Section Style*/
+
+     /* Start Meal Section Style*/
+    .section-meal{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .section-meal img{
+        margin: 15px;
+        height: 250px;
+        width: 250px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+
+    .section-meal img:hover{
+        box-shadow:black 5px 5px 5px;
+        border: blueviolet 3px solid;
+        transform: scale(1.1);
+        opacity: 0.9;
+}
+     /* End Meal Section Style*/

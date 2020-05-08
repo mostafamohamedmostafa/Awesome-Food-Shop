@@ -466,6 +466,8 @@ i span{
     margin: 10px;
 }
 /* End Cites Section Style*/
+
+/* Start testimonials Section Style*/
 .Customer-testimonials{
     text-align: center;
     background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) ,url(/img/back-customers.jpg);
@@ -502,4 +504,38 @@ i span{
     -moz-border-radius: 70px;
     -ms-border-radius: 70px;
     -o-border-radius: 70px;
+}
+
+/* End testimonials Section Style*/
+
+/* Start Sign Up Section Style*/
+.prices{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    text-align: center; 
+    padding: 10px;
+
+   
+}
+
+.prices-details{
+    background-color: rgb(223, 223, 223);
+    border: black 1px solid;
+    width: 31%;
+    margin: 10px;
+    padding: 25px;
+    color:black;
+    box-shadow: blue 4px 4px 4px;
+
+}
+
+.prices-details span{
+    color: orangered;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.prices-details li{
+    padding: 10px;
 }

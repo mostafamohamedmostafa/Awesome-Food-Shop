@@ -136,14 +136,14 @@ body {
 }
 
 .row {
-    max-width: 1140px1140px;
+    /*max-width: 1140px;*/
     margin: 0 auto;
 }
 
 /* Start Header Style*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(/img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(hero.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -197,8 +197,9 @@ header {
 
 
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
+    position: center; /*absuolte*/
+    /*width: 1140px;*/
+    /*
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -206,15 +207,18 @@ header {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    */
+    text-align: center;
+
 }
 
 .hero-text-box h1 {
     color: white;
-    font-weight: 400;
-    font-size: 200%;
+    font-weight: 300;
+    font-size: 110%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    word-spacing: 4px;
+    word-spacing: 2px;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
@@ -236,7 +240,7 @@ header {
     -ms-border-radius: 200px;
     -o-border-radius: 200px;
     animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-
+    -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .button-orange {
@@ -470,7 +474,7 @@ i span{
 /* Start testimonials Section Style*/
 .Customer-testimonials{
     text-align: center;
-    background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) ,url(/img/back-customers.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) ,url(back-customers.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -500,10 +504,10 @@ i span{
 
 .testimoials-details img{
     border-radius: 70px;
-    -webkit-border-radius: 70px;
-    -moz-border-radius: 70px;
-    -ms-border-radius: 70px;
-    -o-border-radius: 70px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 /* End testimonials Section Style*/

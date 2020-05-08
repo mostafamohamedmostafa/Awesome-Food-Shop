@@ -4,6 +4,129 @@
     box-sizing: border-box;
 }
 
+/* Animations*/
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    80% {
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
+    }
+}
+
+@keyframes shake-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    80% {
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
+    }
+}
+
+
+
+
+
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+
+    to {
+        color: gray;
+        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+}
+
+
+/*End OF Animations*/
+
 body {
     background-color: #fff;
     color: black;
@@ -97,20 +220,6 @@ header {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
-    from {
-        color: #fff;
-        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-    }
-
-    to {
-        color: gray;
-        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-    }
-}
-
-
-
 .button {
     display: inline-block;
     padding: 10px 30px;
@@ -126,6 +235,8 @@ header {
     -moz-border-radius: 200px;
     -ms-border-radius: 200px;
     -o-border-radius: 200px;
+    animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
 }
 
 .button-orange {
@@ -158,6 +269,7 @@ header {
 /* Start Features Section Style*/
 section {
     padding: 50px 0px;
+
 }
 
 .section-features h2 {
@@ -180,9 +292,8 @@ h3 {
 }
 
 h3:hover {
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
 }
 
 h3::after {
@@ -201,20 +312,20 @@ h3::after {
     margin: 0 auto;
 }
 
-p{
+p {
     font-style: italic;
 }
 
-.grid-box{
+.grid-box {
     padding: 0.1%;
 }
 
-i{
+i {
     color: orangered;
     font-size: xx-large;
 }
 
-i:hover{
+i:hover {
     color: orchid;
     transition: ease-in-out 2s;
     -webkit-transition: ease-in-out 2s;
@@ -222,63 +333,70 @@ i:hover{
     -ms-transition: ease-in-out 2s;
     -o-transition: ease-in-out 2s;
 }
-    
-    /* End Features Section Style*/
 
-     /* Start Meal Section Style*/
-    .section-meal{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+/* End Features Section Style*/
 
-    }
+/* Start Meal Section Style*/
+.section-meal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 
-    .section-meal img{
-        margin: 15px;
-        height: 250px;
-        width: 250px;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
 }
 
-    .section-meal img:hover{
-        box-shadow:black 5px 5px 5px;
-        border: blueviolet 3px solid;
-        transform: scale(1.1);
-        opacity: 0.9;
-}
-     /* End Meal Section Style*/
-
-
-     /* Start How to Section Style*/
-.how-it-work{
-
-text-align: center;
+.section-meal img {
+    margin: 15px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
+.section-meal img:hover {
+    box-shadow: black 5px 5px 5px;
+    border: blueviolet 3px solid;
+    transform: scale(1.1);
+    opacity: 0.9;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
-.app-screen{
+/* End Meal Section Style*/
+
+
+/* Start How to Section Style*/
+.how-it-work {
+
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+
+.app-screen {
     width: 35%;
-    margin:0 auto;
-    
+    margin: 0 auto;
+
 }
 
-.steps{
+.steps {
     display: inline-flex;
     justify-content: center;
-    margin:25px auto;
+    margin: 25px auto;
 }
-.button-app img:hover{
+
+.button-app img:hover {
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    box-shadow:gray 5px 5px 5px;
+    box-shadow: gray 5px 5px 5px;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -286,4 +404,59 @@ text-align: center;
     -o-transform: scale(1.1);
 }
 
- /* End How to Section Style*/
+/* End How to Section Style*/
+
+
+/* Start Cites Section Style*/
+
+.cites h3 {
+    text-align: center;
+}
+
+.cites-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+
+}
+
+.city-name {
+    text-align: center;
+    font-style: italic;
+    animation: text-focus-in 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+.cites-list img {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+}
+
+.cites-list img:hover {
+    border: 3px solid violet;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 4px 4px 5px yellow;
+    transition: ease-in-out 2s;
+    -webkit-transition: ease-in-out 2s;
+    -moz-transition: ease-in-out 2s;
+    -ms-transition: ease-in-out 2s;
+    -o-transition: ease-in-out 2s;
+}
+
+
+.cites-info {
+    border: grey dotted 1px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+/* End Cites Section Style*/

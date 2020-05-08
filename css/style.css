@@ -459,4 +459,9 @@ i:hover {
     flex-direction: column;
 
 }
+
+
+i span{
+    color:black;
+}
 /* End Cites Section Style*/

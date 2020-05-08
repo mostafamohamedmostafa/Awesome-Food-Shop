@@ -280,7 +280,7 @@ section {
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
-    font-style: 150%;
+    font-size: 99%;
     margin: 0 auto;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -291,7 +291,7 @@ h3 {
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
-    font-style: 150%;
+    font-size: 90%;
     margin-bottom: 15px;
 }
 
@@ -318,6 +318,8 @@ h3::after {
 
 p {
     font-style: italic;
+    font-size: 85%;
+
 }
 
 .grid-box {
@@ -376,7 +378,6 @@ i:hover {
 
 /* Start How to Section Style*/
 .how-it-work {
-
     text-align: center;
     background-color: rgb(243, 243, 243);
 }
@@ -389,6 +390,7 @@ i:hover {
 }
 
 .steps {
+    font-size: large;
     display: inline-flex;
     justify-content: center;
     margin: 25px auto;
@@ -504,23 +506,24 @@ i span{
 
 .testimoials-details img{
     border-radius: 70px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+ 
 }
 
 /* End testimonials Section Style*/
 
 /* Start Sign Up Section Style*/
+.sign-up-section{
+    text-align: center;
+}
+
+
+
 .prices{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row; 
     text-align: center; 
-    padding: 10px;
-
-   
+    padding: 10px;   
 }
 
 .prices-details{

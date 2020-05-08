@@ -136,7 +136,7 @@ body {
 }
 
 .row {
-    max-width: 1140px;
+    max-width: 1140px1140px;
     margin: 0 auto;
 }
 
@@ -558,4 +558,36 @@ i span{
    
     color:black;
     box-shadow: turquoise 4px 4px 4px;
+}
+/*End FOrm Section Style*/
+
+
+/*Start Footer Section Style*/
+
+
+
+.Site-Footer{
+    background-color: gray;
+}
+
+.footer-nav{
+list-style: none;
+float: left;
+}
+
+.footer-nav li,.social-nav li{
+    margin: 15px;
+    display: inline-block;
+   
+
+}
+
+.footer-nav a{
+text-decoration: none;
+
+}
+
+.social-nav{
+list-style: none;
+float: right;
 }

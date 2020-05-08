@@ -268,7 +268,7 @@ header {
 
 /* Start Features Section Style*/
 section {
-    padding: 50px 0px;
+    padding: 30px 0px;
 
 }
 
@@ -463,5 +463,43 @@ i:hover {
 
 i span{
     color:black;
+    margin: 10px;
 }
 /* End Cites Section Style*/
+.Customer-testimonials{
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) ,url(/img/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.testimonials-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.testimoials-details{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    color:white;
+
+}
+
+
+
+.testimoials-details blockquote{
+    animation: text-focus-in 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+.testimoials-details img{
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+}
